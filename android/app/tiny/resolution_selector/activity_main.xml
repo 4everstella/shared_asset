@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title View -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Resolution"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Resolution Options -->
+    <RadioGroup
+        android:id="@+id/resolutionRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radio360p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="360p"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio540p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="540p" />
+
+        <RadioButton
+            android:id="@+id/radio720p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="720p" />
+
+        <RadioButton
+            android:id="@+id/radio840p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="840p" />
+
+        <RadioButton
+            android:id="@+id/radio1080p"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1080p" />
+    </RadioGroup>
+
+    <!-- Apply Button -->
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp" />
+</LinearLayout>
+
